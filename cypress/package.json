@@ -1,0 +1,35 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "description": "Cypress Cucumber",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1deyce/cypress-cucumber-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1deyce/cypress-cucumber-test/issues"
+  },
+  "homepage": "https://github.com/1deyce/cypress-cucumber-test#readme",
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "stepDefinitions": "./integration/Auth/authSteps.js"
+  },
+  "dependencies": {
+    "@cypress/webpack-preprocessor": "^6.0.2",
+    "cypress": "^13.15.0",
+    "path": "^0.12.7",
+    "path-browserify": "^1.0.1",
+    "process": "^0.11.10",
+    "webpack": "^5.95.0"
+  },
+  "devDependencies": {
+    "cucumber": "^6.0.7",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  }
+}
